@@ -1,0 +1,627 @@
+:root {
+  --back-header-color: #000000;
+  --dapper: #fffbfb;
+  --background-color: #ffffff;
+}
+
+body {
+  max-width: 1920px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  width: 100%;
+  background-color: var(--back-header-color);
+}
+
+.logo {
+  width: 253px;
+  height: 129px;
+}
+
+.img_header {
+  width: 253px;
+  height: 129px;
+
+  background-color: var(--dapper);
+}
+
+.links {
+  margin-right: 27px;
+  gap: 34px;
+  list-style: none;
+}
+
+a {
+  font-family: "Rosario";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+
+  text-decoration: none;
+  color: #fffcfc;
+}
+
+.nav {
+  display: flex;
+  
+  align-items: center;
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: end;
+}
+
+.portfolio {
+  overflow: hidden;
+  position: relative;
+  min-height: 88vh;
+  background-color: var(--background-color);
+}
+
+@keyframes rectangle1 {
+  0% {
+    transform: translateX(-210%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rectangle21 {
+  0% {
+    transform: translateX(-210%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rectangle20_25 {
+  0% {
+    transform: translateX(-210%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rectangle22_23 {
+  0% {
+    transform: translateX(210%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rectangle24 {
+  0% {
+    transform: translateX(210%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.Rectangle_20 {
+  position: absolute;
+  width: 24.4%;
+  height: 410px;
+  top: 71px;
+  left: 485px;
+  animation-name: rectangle20_25;
+  animation-duration: 1000ms;
+}
+
+.Rectangle_21 {
+  position: absolute;
+  width: 19.4%;
+  height: 583px;
+  top: 189px;
+  left: 43px;
+  animation-name: rectangle21;
+  animation-duration: 2000ms;
+}
+
+.Rectangle_22 {
+  position: absolute;
+  width: 24.4%;
+  top: 71px;
+  right: 485px;
+  animation-name: rectangle22_23;
+  animation-duration: 1000ms;
+}
+
+.Rectangle_23 {
+  position: absolute;
+  width: 25%;
+  height: 364px;
+  top: 523px;
+  right: 472px;
+  animation-name: rectangle22_23;
+  animation-duration: 1000ms;
+}
+
+.Rectangle_24 {
+  position: absolute;
+  width: 19.3%;
+  height: 583px;
+  top: 189px;
+  right: 43px;
+  animation-name: rectangle24;
+  animation-duration: 2000ms;
+}
+
+.Rectangle_25 {
+  position: absolute;
+  width: 24.5%;
+  height: 364px;
+  top: 523px;
+  left: 485px;
+  animation-name: rectangle20_25;
+  animation-duration: 1000ms;
+}
+
+.div_two {
+  min-height: 88vh;
+  display: flex;
+}
+
+.pexels {
+  position: relative;
+  width: 53%;
+  text-align: center;
+}
+
+.pexels-cottonbro {
+  width: 47%;
+  background-size: cover;
+  background-position-y: center;
+  background-image: url(../img/pexels-cottonbro-3998389\ 1.png);
+  background-repeat: no-repeat;
+}
+
+@keyframes ellipse_1 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(155%, 0%);
+  }
+  50% {
+    transform: translate(155%, 108%);
+  }
+  75% {
+    transform: translate(0%, 108%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes ellipse_2 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(0%, 108%);
+  }
+  50% {
+    transform: translate(-155%, 108%);
+  }
+  75% {
+    transform: translate(-155%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes ellipse_3 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(0%, -108%);
+  }
+  50% {
+    transform: translate(155%, -108%);
+  }
+  75% {
+    transform: translate(155%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes ellipse_4 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-155%, 0%);
+  }
+  50% {
+    transform: translate(-155%, -108%);
+  }
+  75% {
+    transform: translate(0%, -108%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.Ellipse_1 {
+  position: absolute;
+  left: 38px;
+  top: 47px;
+  animation-name: ellipse_1;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.Ellipse_2 {
+  position: absolute;
+  top: 38px;
+  right: 86px;
+  animation-name: ellipse_2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.Ellipse_3 {
+  position: absolute;
+  top: 496px;
+  left: 38px;
+  animation-name: ellipse_3;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.Ellipse_4 {
+  position: absolute;
+  right: 86px;
+  top: 496px;
+  animation-name: ellipse_4;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.services {
+  font-family: "Rosario";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  color: var(--back-header-color);
+}
+
+.content_pexels {
+  width: 350px;
+  height: 350px;
+}
+
+.team {
+  min-height: 86vh;
+  overflow: hidden;
+}
+
+.team_card {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.cards1 {
+  position: relative;
+  width: 392px;
+  height: 677px;
+  margin-top: 30px;
+  background-image: url(../img/Rectangle\ 8.png);
+  border-radius: 40px;
+}
+
+.cards2 {
+  position: relative;
+  width: 392px;
+  height: 677px;
+  margin-top: 30px;
+  background-image: url(../img/Rectangle\ 12.png);
+  border-radius: 40px;
+}
+
+.cards3 {
+  position: relative;
+  width: 392px;
+  height: 677px;
+  margin-top: 30px;
+  background-image: url(../img/Rectangle\ 13.png);
+  border-radius: 40px;
+}
+
+.cards4 {
+  position: relative;
+  width: 392px;
+  height: 677px;
+  margin-top: 30px;
+  background-image: url(../img/Rectangle\ 9.png);
+}
+
+.name_team {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 42px;
+  background: rgba(163, 83, 10, 0.7);
+  overflow: hidden;
+  color: #fffafa;
+}
+
+.team:has(:hover):hover .cards1:not(:hover),
+.cards1:not(:hover),
+.cards2:not(:hover),
+.cards3:not(:hover),
+.cards4:not(:hover) {
+  filter: brightness(50%);
+}
+
+.cards1:hover .name_team,
+.cards2:hover .name_team,
+.cards3:hover .name_team,
+.cards4:hover .name_team {
+  height: 157.57px;
+}
+
+.meet_our {
+  text-align: center;
+  margin-top: 22px;
+  width: 1787px;
+  height: 177px;
+  padding-left: 68px;
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 116px;
+}
+
+.footer {
+  min-height: 88vh;
+}
+
+.footer_container {
+  display: flex;
+}
+
+.name {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  width: 377px;
+  height: 80px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 35px 25px 0px 29px;
+}
+
+.email {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  width: 452px;
+  height: 80px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 35px 25px 0px 8px;
+}
+
+textarea {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  width: 878px;
+  height: 209px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 45px 29px;
+}
+
+.get {
+  font-family: "Rosario";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  margin-left: 162px;
+  margin-top: 58px;
+  margin-bottom: 25px;
+  color: var(--back-header-color);
+}
+
+.google_maps {
+  width: 626px;
+  height: 570px;
+  margin-left: 34px;
+  margin-top: 65px;
+  border: 2px solid black;
+}
+
+.form_reg {
+  width: 936px;
+  height: 400px;
+  margin-left: 162px;
+  background: #e5e5e5;
+}
+
+.foot_info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.connection {
+  font-family: "Rosario";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 47px;
+  margin-left: 105px;
+}
+
+.connection > a {
+  color: var(--back-header-color);
+}
+
+.opening_hours {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 47px;
+  color: var(--back-header-color);
+}
+
+.opening_hours > h4 {
+  display: inline-block;
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+}
+.opening_hours > p {
+  margin: 0;
+}
+
+.connect {
+  display: inline-block;
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0px;
+  text-align: center;
+}
+
+.footer_links {
+  margin-top: 47px;
+}
+
+a > img {
+  margin-right: 14px;
+}
+
+.footer_links > a {
+  margin-left: 55px;
+  color: var(--back-header-color);
+  display: inline-block;
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--back-header-color);
+}
+
+
+@media screen and (min-weight:768px) {
+  body {
+    max-width: 767px;
+    box-sizing: border-box;
+  }
+  .portfolio {
+    display: block;
+    min-height: 200rem;
+    overflow: hidden;
+   
+  }
+  .Rectangle_20 {
+    position: absolute;
+    width: 465px;
+    height: 410px;
+   
+    animation-name: rectangle20_25;
+    animation-duration: 1000ms;
+  }
+  
+  .Rectangle_21 {
+    position: absolute;
+    width: 370px;
+    height: 583px;
+   
+    animation-name: rectangle21;
+    animation-duration: 2000ms;
+  }
+  
+  .Rectangle_22 {
+    position: absolute;
+    width: 467px;
+    height: 410pх;
+  
+    animation-name: rectangle22_23;
+    animation-duration: 1000ms;
+  }
+  
+  .Rectangle_23 {
+    position: absolute;
+    width: 475px;
+    height: 364px;
+   
+    animation-name: rectangle22_23;
+    animation-duration: 1000ms;
+  }
+  
+  .Rectangle_24 {
+    position: absolute;
+    width: 367px;
+    height: 583px;
+   
+    animation-name: rectangle24;
+    animation-duration: 2000ms;
+  }
+  
+  .Rectangle_25 {
+    position: absolute;
+    width: 465px;
+    height: 364px;
+   
+    animation-name: rectangle20_25;
+    animation-duration: 1000ms;
+  }
+}
